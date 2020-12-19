@@ -116,7 +116,7 @@ class ReservaController extends Controller
         return DB::table('reservas')
             ->join('usuarios', 'usuarios.id', '=', 'reservas.usuario_id')
             ->select('reservas.inicio', 'reservas.fim', 'usuarios.nome as usuario')
-            ->where('reservas.inicio', 'like', $data + '%')
+            ->where('reservas.inicio', 'like', $data)
             ->orderBy('reservas.inicio')
             ->get();
     }
