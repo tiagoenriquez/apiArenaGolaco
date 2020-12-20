@@ -1,4 +1,22 @@
-## <p align=center><b>API ARENA GOLAÇO</b></p>
+## <h1 align=center><b>API ARENA GOLAÇO</b></h1>
+
+Api para persistência de dados provenientes do aplicativo Arena Golaço, uma quadra fictícia criada para ser objeto do presente projeto.
+
+## Como ter esta API rodando na sua máquina:
+
+Clone este projeto na sua máquina
+Instale as dependências do laravel no seu projeto
+Insira as informações de nome de banco de senha no .env
+Crie um banco no MySql com o nome inderido no .env
+Siga as orientações presentes na documentação do laravel
+Acesse o sistema pela URL http://localhost:8000/api
+
+## Requisitos do sistema:
+
+Composer version 1.10.13
+PHP 7.4.10
+
+## Framework:
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
