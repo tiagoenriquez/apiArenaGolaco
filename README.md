@@ -65,7 +65,7 @@ PHP 7.4.10
     -> Verbo: get <br>
     -> Argumentos: 
         usuario (route), 
-        nicio (route) <br>
+        inicio (route) <br>
     -> Retorno: 
         Lista de reservas (inicio, fim) <br>
 
