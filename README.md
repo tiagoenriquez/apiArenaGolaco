@@ -49,7 +49,7 @@ PHP 7.4.10
     -> Argumentos: 
         inicio (body), 
         usuario_id (body) <br>
-    -> Retorno: <br>
+    -> Retorno: 
         -> Mensagem de sucesso <br>
 
 4. Listagem de reservas por data: <br>
