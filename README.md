@@ -24,57 +24,57 @@ PHP 7.4.10
 1. Cadastro de usuário: <br>
     -> URL: /usuario    <br>
     -> Verbo: post <br>
-    -> Argumentos: <br>
-        -> nome (body) <br>
+    -> Argumentos: 
+        <ul>-> nome (body) <br>
         -> cpf (body) <br>
         -> telefone (body) <br>
         -> email (body) <br>
         -> senha (body) <br>
-        -> senhaConfirmacao (body) <br>
-    -> Retorno: <br>
-        -> Mensagem de sucesso <br>
+        -> senhaConfirmacao (body) </ul><br>
+    -> Retorno: 
+        <ul>-> Mensagem de sucesso </ul><br>
 
 2. Login: <br>
     -> URL: /login <br>
     -> Verbo: post <br>
-    -> Argumentos: <br>
+    -> Argumentos: 
         <ul>-> email (body) <br>
         -> senha (body) <br></ul>
-    -> Retorno: <br>
+    -> Retorno: 
         <ul>-> usuario (id, nome, cpf, telefone, email, senha (criptografada)) </ul><br>
 
 3. Cadastro de reserva: <br>
     -> URL: /reserva <br>
     -> Verbo: post <br>
-    -> Argumentos: <br>
+    -> Argumentos: 
         <ul>-> inicio (body) <br>
         -> usuario_id (body) </ul><br>
-    -> Retorno: <br>
+    -> Retorno: 
         <ul>-> Mensagem de sucesso </ul><br>
 
 4. Listagem de reservas por data: <br>
     -> URL: /reserva/data={data} <br>
     -> Verbo: get <br>
-    -> Argumentos: <br>
+    -> Argumentos: 
         <ul>-> data: (route) </ul><br>
-    -> Retorno: <br>
+    -> Retorno: 
         <ul>-> Lista de reservas (inicio, fim, usuario) </ul><br>
 
 5. Listagem de reservas por usuário: <br>
     -> URL: reserva/usuario={usuario}&inicio={inicio} <br>
     -> Verbo: get <br>
-    -> Argumentos: <br>
+    -> Argumentos: 
         <ul>-> usuario (route) <br>
         -> inicio (route) </ul><br>
-    -> Retorno: <br>
+    -> Retorno: 
         <ul>-> Lista de reservas (inicio, fim) </ul><br>
 
 6. Exclusão de reserva: <br>
     -> URL: /reserva <br>
     -> Verbo: delete <br>
-    -> Argumentos: <br>
+    -> Argumentos: 
         <ul>-> inicio (route) </ul><br>
-    -> Retorno: <br>
+    -> Retorno: 
         <ul>-> Mensagem de sucesso </ul><br>
 
 ## Framework:
