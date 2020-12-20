@@ -25,57 +25,57 @@ PHP 7.4.10
     -> URL: /usuario    <br>
     -> Verbo: post <br>
     -> Argumentos: 
-        <ul>-> nome (body) <br>
+        -> nome (body) <br>
         -> cpf (body) <br>
         -> telefone (body) <br>
         -> email (body) <br>
         -> senha (body) <br>
-        -> senhaConfirmacao (body) </ul><br>
+        -> senhaConfirmacao (body) <br>
     -> Retorno: 
-        <ul>-> Mensagem de sucesso </ul><br>
+        -> Mensagem de sucesso <br>
 
 2. Login: <br>
-    -> URL: /login <br>
+     -> URL: /login <br>
     -> Verbo: post <br>
     -> Argumentos: 
-        <ul>-> email (body) <br>
-        -> senha (body) <br></ul>
+        -> email (body) <br>
+        -> senha (body) <br>
     -> Retorno: 
-        <ul>-> usuario (id, nome, cpf, telefone, email, senha (criptografada)) </ul><br>
+        -> usuario (id, nome, cpf, telefone, email, senha (criptografada)) <br>
 
 3. Cadastro de reserva: <br>
     -> URL: /reserva <br>
     -> Verbo: post <br>
     -> Argumentos: 
-        <ul>-> inicio (body) <br>
-        -> usuario_id (body) </ul><br>
+        -> inicio (body) <br>
+        -> usuario_id (body) <br>
     -> Retorno: 
-        <ul>-> Mensagem de sucesso </ul><br>
+        -> Mensagem de sucesso <br>
 
 4. Listagem de reservas por data: <br>
     -> URL: /reserva/data={data} <br>
     -> Verbo: get <br>
     -> Argumentos: 
-        <ul>-> data: (route) </ul><br>
+        -> data: (route) <br>
     -> Retorno: 
-        <ul>-> Lista de reservas (inicio, fim, usuario) </ul><br>
+        -> Lista de reservas (inicio, fim, usuario) <br>
 
 5. Listagem de reservas por usuário: <br>
     -> URL: reserva/usuario={usuario}&inicio={inicio} <br>
     -> Verbo: get <br>
     -> Argumentos: 
-        <ul>-> usuario (route) <br>
-        -> inicio (route) </ul><br>
+         -> usuario (route) <br>
+        -> inicio (route) <br>
     -> Retorno: 
-        <ul>-> Lista de reservas (inicio, fim) </ul><br>
+        -> Lista de reservas (inicio, fim) <br>
 
 6. Exclusão de reserva: <br>
     -> URL: /reserva <br>
     -> Verbo: delete <br>
     -> Argumentos: 
-        <ul>-> inicio (route) </ul><br>
+        -> inicio (route) <br>
     -> Retorno: 
-        <ul>-> Mensagem de sucesso </ul><br>
+        -> Mensagem de sucesso <br>
 
 ## Framework:
 
