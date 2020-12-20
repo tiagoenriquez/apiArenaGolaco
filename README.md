@@ -4,17 +4,78 @@ Api para persistência de dados provenientes do aplicativo Arena Golaço, uma qu
 
 ## Como ter esta API rodando na sua máquina:
 
-Clone este projeto na sua máquina <br>
-Instale as dependências do laravel no seu projeto <br>
+Clone este projeto: git clone https://github.com/tiagoenriquez/apiArenaGolaco.git <br>
+Instale as dependências do laravel: composer install <br>
 Insira as informações de nome de banco de senha no .env <br>
-Crie um banco no MySql com o nome inderido no .env <br>
-Siga as orientações presentes na documentação do laravel <br>
+Crie um banco no MySql com o nome inserido no .env <br>
+Migre as tabelas para a base de dados: php artisan migrate <br>
+Inicie o Apache
+Suba a API: php artisan serve
 Acesse o sistema pela URL http://localhost:8000/api
 
 ## Requisitos do sistema:
 
 Composer version 1.10.13 <br>
+Laravel Installer 4.0.5 <br>
 PHP 7.4.10
+
+## Ações desta API:
+
+1. Cadastro de usuário:
+    -> URL: /usuario   
+    -> Verbo: post
+    -> Argumentos:
+        -> nome (body)
+        -> cpf (body)
+        -> telefone (body)
+        -> email (body)
+        -> senha (body)
+        -> senhaConfirmacao (body)
+    -> Retorno:
+        -> Mensagem de sucesso
+
+2. Login:
+    -> URL: /login
+    -> Verbo: post
+    -> Argumentos:
+        -> email (body)
+        -> senha (body)
+    -> Retorno:
+        -> usuario (id, nome, cpf, telefone, email, senha (criptografada))
+
+3. Cadastro de reserva:
+    -> URL: /reserva
+    -> Verbo: post
+    -> Argumentos:
+        -> inicio (body)
+        -> usuario_id (body)
+    -> Retorno:
+        -> Mensagem de sucesso
+
+4. Listagem de reservas por data:
+    -> URL: /reserva/data={data}
+    -> Verbo: get
+    -> Argumentos:
+        -> data: (route)
+    -> Retorno:
+        -> Lista de reservas (inicio, fim, usuario)
+
+5. Listagem de reservas por usuário:
+    -> URL: reserva/usuario={usuario}&inicio={inicio}
+    -> Verbo: get
+    -> Argumentos:
+        -> usuario (route)
+        -> inicio (route)
+    -> Retorno:
+        -> Lista de reservas (inicio, fim)
+
+6. Exclusão de reserva:
+    -> URL: /reserva
+    -> Verbo: delete
+    -> Argumentos:
+        -> inicio (route)
+    -> Retorno:
+        -> Mensagem de sucesso
 
 ## Framework:
 

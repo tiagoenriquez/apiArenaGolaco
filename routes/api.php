@@ -21,8 +21,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post('login', [UsuarioController::class, 'logar']);
-Route::get('reserva/usuario={usuario}&horario={horario}', [ReservaController::class, 'listarPorUsuario']);
+Route::get('reserva/usuario={usuario}&inicio={inicio}', [ReservaController::class, 'listarPorUsuario']);
 Route::get('reserva/data={data}', [ReservaController::class, 'listarPorData']);
-Route::post('usuario/procurar-por-cpf', [UsuarioController::class, 'procurarPorCpf']);
 Route::resource('usuario', UsuarioController::class);
 Route::resource('reserva', ReservaController::class);
