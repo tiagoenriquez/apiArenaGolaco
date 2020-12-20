@@ -4,16 +4,16 @@ Api para persistência de dados provenientes do aplicativo Arena Golaço, uma qu
 
 ## Como ter esta API rodando na sua máquina:
 
-Clone este projeto na sua máquina
-Instale as dependências do laravel no seu projeto
-Insira as informações de nome de banco de senha no .env
-Crie um banco no MySql com o nome inderido no .env
-Siga as orientações presentes na documentação do laravel
+Clone este projeto na sua máquina <br>
+Instale as dependências do laravel no seu projeto <br>
+Insira as informações de nome de banco de senha no .env <br>
+Crie um banco no MySql com o nome inderido no .env <br>
+Siga as orientações presentes na documentação do laravel <br>
 Acesse o sistema pela URL http://localhost:8000/api
 
 ## Requisitos do sistema:
 
-Composer version 1.10.13
+Composer version 1.10.13 <br>
 PHP 7.4.10
 
 ## Framework:
