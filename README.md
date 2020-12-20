@@ -21,61 +21,61 @@ PHP 7.4.10
 
 ## Ações desta API:
 
-1. Cadastro de usuário:
-    -> URL: /usuario   
-    -> Verbo: post
-    -> Argumentos:
-        -> nome (body)
-        -> cpf (body)
-        -> telefone (body)
-        -> email (body)
-        -> senha (body)
-        -> senhaConfirmacao (body)
-    -> Retorno:
-        -> Mensagem de sucesso
-
-2. Login:
-    -> URL: /login
-    -> Verbo: post
-    -> Argumentos:
-        -> email (body)
-        -> senha (body)
-    -> Retorno:
-        -> usuario (id, nome, cpf, telefone, email, senha (criptografada))
-
-3. Cadastro de reserva:
-    -> URL: /reserva
-    -> Verbo: post
-    -> Argumentos:
-        -> inicio (body)
-        -> usuario_id (body)
-    -> Retorno:
-        -> Mensagem de sucesso
-
-4. Listagem de reservas por data:
-    -> URL: /reserva/data={data}
-    -> Verbo: get
-    -> Argumentos:
-        -> data: (route)
-    -> Retorno:
-        -> Lista de reservas (inicio, fim, usuario)
-
-5. Listagem de reservas por usuário:
-    -> URL: reserva/usuario={usuario}&inicio={inicio}
-    -> Verbo: get
-    -> Argumentos:
-        -> usuario (route)
-        -> inicio (route)
-    -> Retorno:
-        -> Lista de reservas (inicio, fim)
-
-6. Exclusão de reserva:
-    -> URL: /reserva
-    -> Verbo: delete
-    -> Argumentos:
-        -> inicio (route)
-    -> Retorno:
-        -> Mensagem de sucesso
+1. Cadastro de usuário: <br>
+    -> URL: /usuario    <br>
+    -> Verbo: post <br>
+    -> Argumentos: <br>
+        -> nome (body) <br>
+        -> cpf (body) <br>
+        -> telefone (body) <br>
+        -> email (body) <br>
+        -> senha (body) <br>
+        -> senhaConfirmacao (body) <br>
+    -> Retorno: <br>
+        -> Mensagem de sucesso <br>
+ <br>
+2. Login: <br>
+    -> URL: /login <br>
+    -> Verbo: post <br>
+    -> Argumentos: <br>
+        -> email (body) <br>
+        -> senha (body) <br>
+    -> Retorno: <br>
+        -> usuario (id, nome, cpf, telefone, email, senha (criptografada)) <br>
+ <br>
+3. Cadastro de reserva: <br>
+    -> URL: /reserva <br>
+    -> Verbo: post <br>
+    -> Argumentos: <br>
+        -> inicio (body) <br>
+        -> usuario_id (body) <br>
+    -> Retorno: <br>
+        -> Mensagem de sucesso <br>
+ <br>
+4. Listagem de reservas por data: <br>
+    -> URL: /reserva/data={data} <br>
+    -> Verbo: get <br>
+    -> Argumentos: <br>
+        -> data: (route) <br>
+    -> Retorno: <br>
+        -> Lista de reservas (inicio, fim, usuario) <br>
+ <br>
+5. Listagem de reservas por usuário: <br>
+    -> URL: reserva/usuario={usuario}&inicio={inicio} <br>
+    -> Verbo: get <br>
+    -> Argumentos: <br>
+        -> usuario (route) <br>
+        -> inicio (route) <br>
+    -> Retorno: <br>
+        -> Lista de reservas (inicio, fim) <br>
+ <br>
+6. Exclusão de reserva: <br>
+    -> URL: /reserva <br>
+    -> Verbo: delete <br>
+    -> Argumentos: <br>
+        -> inicio (route) <br>
+    -> Retorno: <br>
+        -> Mensagem de sucesso <br>
 
 ## Framework:
 
