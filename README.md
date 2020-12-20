@@ -24,57 +24,57 @@ PHP 7.4.10
 1. Cadastro de usuário: <br>
     -> URL: /usuario    <br>
     -> Verbo: post <br>
-    -> Argumentos: 
+    -> Argumentos: <br>
         -> nome (body) <br>
         -> cpf (body) <br>
         -> telefone (body) <br>
         -> email (body) <br>
         -> senha (body) <br>
         -> senhaConfirmacao (body) <br>
-    -> Retorno: 
+    -> Retorno: <br>
         -> Mensagem de sucesso <br>
 
 2. Login: <br>
      -> URL: /login <br>
     -> Verbo: post <br>
-    -> Argumentos: 
+    -> Argumentos: <br>
         -> email (body) <br>
         -> senha (body) <br>
-    -> Retorno: 
+    -> Retorno: <br>
         -> usuario (id, nome, cpf, telefone, email, senha (criptografada)) <br>
 
 3. Cadastro de reserva: <br>
     -> URL: /reserva <br>
     -> Verbo: post <br>
-    -> Argumentos: 
+    -> Argumentos: <br>
         -> inicio (body) <br>
         -> usuario_id (body) <br>
-    -> Retorno: 
+    -> Retorno: <br>
         -> Mensagem de sucesso <br>
 
 4. Listagem de reservas por data: <br>
     -> URL: /reserva/data={data} <br>
     -> Verbo: get <br>
-    -> Argumentos: 
+    -> Argumentos: <br>
         -> data: (route) <br>
-    -> Retorno: 
+    -> Retorno: <br>
         -> Lista de reservas (inicio, fim, usuario) <br>
 
 5. Listagem de reservas por usuário: <br>
     -> URL: reserva/usuario={usuario}&inicio={inicio} <br>
     -> Verbo: get <br>
-    -> Argumentos: 
+    -> Argumentos: <br>
          -> usuario (route) <br>
         -> inicio (route) <br>
-    -> Retorno: 
+    -> Retorno: <br>
         -> Lista de reservas (inicio, fim) <br>
 
 6. Exclusão de reserva: <br>
     -> URL: /reserva <br>
     -> Verbo: delete <br>
-    -> Argumentos: 
+    -> Argumentos: <br>
         -> inicio (route) <br>
-    -> Retorno: 
+    -> Retorno: <br>
         -> Mensagem de sucesso <br>
 
 ## Framework:
