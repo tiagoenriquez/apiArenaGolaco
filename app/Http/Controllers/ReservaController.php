@@ -17,7 +17,7 @@ class ReservaController extends Controller
      */
     public function index()
     {
-        return Reserva::all();
+        // return Reserva::all();
     }
 
     /**
