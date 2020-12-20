@@ -38,44 +38,44 @@ PHP 7.4.10
     -> URL: /login <br>
     -> Verbo: post <br>
     -> Argumentos: <br>
-        -> email (body) <br>
-        -> senha (body) <br>
+        <ul>-> email (body) <br>
+        -> senha (body) <br></ul>
     -> Retorno: <br>
-        -> usuario (id, nome, cpf, telefone, email, senha (criptografada)) <br>
+        <ul>-> usuario (id, nome, cpf, telefone, email, senha (criptografada)) </ul><br>
 
 3. Cadastro de reserva: <br>
     -> URL: /reserva <br>
     -> Verbo: post <br>
     -> Argumentos: <br>
-        -> inicio (body) <br>
-        -> usuario_id (body) <br>
+        <ul>-> inicio (body) <br>
+        -> usuario_id (body) </ul><br>
     -> Retorno: <br>
-        -> Mensagem de sucesso <br>
+        <ul>-> Mensagem de sucesso </ul><br>
 
 4. Listagem de reservas por data: <br>
     -> URL: /reserva/data={data} <br>
     -> Verbo: get <br>
     -> Argumentos: <br>
-        -> data: (route) <br>
+        <ul>-> data: (route) </ul><br>
     -> Retorno: <br>
-        -> Lista de reservas (inicio, fim, usuario) <br>
+        <ul>-> Lista de reservas (inicio, fim, usuario) </ul><br>
 
 5. Listagem de reservas por usuário: <br>
     -> URL: reserva/usuario={usuario}&inicio={inicio} <br>
     -> Verbo: get <br>
     -> Argumentos: <br>
-        -> usuario (route) <br>
-        -> inicio (route) <br>
+        <ul>-> usuario (route) <br>
+        -> inicio (route) </ul><br>
     -> Retorno: <br>
-        -> Lista de reservas (inicio, fim) <br>
+        <ul>-> Lista de reservas (inicio, fim) </ul><br>
 
 6. Exclusão de reserva: <br>
     -> URL: /reserva <br>
     -> Verbo: delete <br>
     -> Argumentos: <br>
-        -> inicio (route) <br>
+        <ul>-> inicio (route) </ul><br>
     -> Retorno: <br>
-        -> Mensagem de sucesso <br>
+        <ul>-> Mensagem de sucesso </ul><br>
 
 ## Framework:
 
