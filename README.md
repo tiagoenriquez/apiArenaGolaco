@@ -33,7 +33,7 @@ PHP 7.4.10
         -> senhaConfirmacao (body) <br>
     -> Retorno: <br>
         -> Mensagem de sucesso <br>
- <br>
+
 2. Login: <br>
     -> URL: /login <br>
     -> Verbo: post <br>
@@ -42,7 +42,7 @@ PHP 7.4.10
         -> senha (body) <br>
     -> Retorno: <br>
         -> usuario (id, nome, cpf, telefone, email, senha (criptografada)) <br>
- <br>
+
 3. Cadastro de reserva: <br>
     -> URL: /reserva <br>
     -> Verbo: post <br>
@@ -51,7 +51,7 @@ PHP 7.4.10
         -> usuario_id (body) <br>
     -> Retorno: <br>
         -> Mensagem de sucesso <br>
- <br>
+
 4. Listagem de reservas por data: <br>
     -> URL: /reserva/data={data} <br>
     -> Verbo: get <br>
@@ -59,7 +59,7 @@ PHP 7.4.10
         -> data: (route) <br>
     -> Retorno: <br>
         -> Lista de reservas (inicio, fim, usuario) <br>
- <br>
+
 5. Listagem de reservas por usuário: <br>
     -> URL: reserva/usuario={usuario}&inicio={inicio} <br>
     -> Verbo: get <br>
@@ -68,7 +68,7 @@ PHP 7.4.10
         -> inicio (route) <br>
     -> Retorno: <br>
         -> Lista de reservas (inicio, fim) <br>
- <br>
+
 6. Exclusão de reserva: <br>
     -> URL: /reserva <br>
     -> Verbo: delete <br>
