@@ -79,7 +79,7 @@ PHP 7.4.10
 
 ## Autores:
 
-Tiago Enriquez Tachy
+Tiago Enriquez Tachy <br>
 Ian Vitor
 
 ## Framework:
