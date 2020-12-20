@@ -25,57 +25,57 @@ PHP 7.4.10
     -> URL: /usuario    <br>
     -> Verbo: post <br>
     -> Argumentos: <br>
-        -> nome (body) <br>
-        -> cpf (body) <br>
-        -> telefone (body) <br>
-        -> email (body) <br>
-        -> senha (body) <br>
-        -> senhaConfirmacao (body) <br>
+    .   -> nome (body) <br>
+    .   -> cpf (body) <br>
+    .   -> telefone (body) <br>
+    .   -> email (body) <br>
+    .   -> senha (body) <br>
+    .   -> senhaConfirmacao (body) <br>
     -> Retorno: <br>
-        -> Mensagem de sucesso <br>
+    .   -> Mensagem de sucesso <br>
 
 2. Login: <br>
      -> URL: /login <br>
     -> Verbo: post <br>
     -> Argumentos: <br>
-        -> email (body) <br>
-        -> senha (body) <br>
+    .   -> email (body) <br>
+    .   -> senha (body) <br>
     -> Retorno: <br>
-        -> usuario (id, nome, cpf, telefone, email, senha (criptografada)) <br>
+    .   -> usuario (id, nome, cpf, telefone, email, senha (criptografada)) <br>
 
 3. Cadastro de reserva: <br>
     -> URL: /reserva <br>
     -> Verbo: post <br>
     -> Argumentos: <br>
-        -> inicio (body) <br>
-        -> usuario_id (body) <br>
+    .   -> inicio (body) <br>
+    .   -> usuario_id (body) <br>
     -> Retorno: <br>
-        -> Mensagem de sucesso <br>
+    .   -> Mensagem de sucesso <br>
 
 4. Listagem de reservas por data: <br>
     -> URL: /reserva/data={data} <br>
     -> Verbo: get <br>
     -> Argumentos: <br>
-        -> data: (route) <br>
+    .   -> data: (route) <br>
     -> Retorno: <br>
-        -> Lista de reservas (inicio, fim, usuario) <br>
+    .   -> Lista de reservas (inicio, fim, usuario) <br>
 
 5. Listagem de reservas por usuário: <br>
     -> URL: reserva/usuario={usuario}&inicio={inicio} <br>
     -> Verbo: get <br>
     -> Argumentos: <br>
-         -> usuario (route) <br>
-        -> inicio (route) <br>
+    .   -> usuario (route) <br>
+    .   -> inicio (route) <br>
     -> Retorno: <br>
-        -> Lista de reservas (inicio, fim) <br>
+    .   -> Lista de reservas (inicio, fim) <br>
 
 6. Exclusão de reserva: <br>
     -> URL: /reserva <br>
     -> Verbo: delete <br>
     -> Argumentos: <br>
-        -> inicio (route) <br>
+    .   -> inicio (route) <br>
     -> Retorno: <br>
-        -> Mensagem de sucesso <br>
+    .   -> Mensagem de sucesso <br>
 
 ## Framework:
 
