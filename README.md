@@ -46,7 +46,7 @@ PHP 7.4.10
         usuario (id, nome, cpf, telefone, email, senha (criptografada)) <br>
 
 3. Cadastro de reserva: <br>
-    -> Descrição: Recebe o horário de início e o id de usuário, verifica se o horário é válido e se já está cadastrado para outro usuário e, se passar por todas as validações, calcula o horário de fim e salva uma reserva com os dados obtidos. Formato de início: yyyy-MM-dd hh:mm:ss (exemplo: 2020-12-20 21:12:00). Os horários permitidos são: 06:00:00, 08:00:00, 10:00:00, 12:00:00, 14:00:00, 16:00:00, 18:00:00 e 20:00:00.<br>
+    -> Descrição: Recebe o horário de início e o id de usuário, verifica se o horário é válido e se já está cadastrado para outro usuário e, se passar por todas as validações, calcula o horário de fim e salva uma reserva com os dados obtidos. Formato de início: yyyy-MM-dd hh:mm:ss (exemplo: 2020-12-20 21:12:00). A quadra fica aberta de 6h até 22h e cada reserva dura 2h, portanto, os horários permitidos para cada data são: 06:00:00, 08:00:00, 10:00:00, 12:00:00, 14:00:00, 16:00:00, 18:00:00 e 20:00:00.<br>
     -> URL: http://localhost:8000/api/reserva <br>
     -> Verbo: post <br>
     -> Argumentos: 
