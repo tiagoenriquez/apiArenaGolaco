@@ -65,7 +65,7 @@ PHP 7.4.10
         Lista de reservas (inicio, fim, usuario) <br>
 
 5. Listagem de reservas por usuário: <br>
-    -> Descrição: Recebe um horário de início e um id de usuário e retorna a lista de horários reservados pelo usuário depois da data recebida. Formato dos horários: yyyy-MM-dd hh:mm:ss (exemplo: 2020-12-20 21:12:00). Formato de início: yyyy-MM-dd hh:mm:ss (exemplo: 2020-12-20 21:12:00).<br>
+    -> Descrição: Recebe um horário de início e um id de usuário e retorna a lista de horários reservados pelo usuário depois da data recebida. Formato de início: yyyy-MM-dd hh:mm:ss (exemplo: 2020-12-20 21:12:00).<br>
     -> URL: http://localhost:8000/api/reserva/usuario={usuario}&inicio={inicio} <br>
     -> Verbo: get <br>
     -> Argumentos: 
