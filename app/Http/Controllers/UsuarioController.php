@@ -29,7 +29,8 @@ class UsuarioController extends Controller
     }
 
     /**
-     * Cadastra um usuário no sistema.
+     * Recebe as informações do usuário, verifica se o CPF ou o e-mail já está cadastrado, se a senha e a senha de confirmação são 
+     * idênticas e, passando por todas as validações, cadastra um usuário no sistema.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -104,7 +105,8 @@ class UsuarioController extends Controller
     }
 
     /**
-     * Loga usuário no sistema.
+     * Recebe e-mail e senha do usuário, verifica se estão preenchidos, se estão cadastrados para o mesmo usuário no banco de 
+     * dados e retorna os dados do usuário.
      *
      * @param  Request $request
      * @return \Illuminate\Http\Response

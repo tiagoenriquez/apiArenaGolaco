@@ -22,7 +22,8 @@ PHP 7.4.10
 ## Ações desta API:
 
 1. Cadastro de usuário: <br>
-    -> URL: /usuario    <br>
+    -> Descrição: Recebe as informações do usuário, verifica se o CPF ou o e-mail já está cadastrado, se a senha e a senha de confirmação são idênticas e, passando por todas as validações, cadastra um usuário no sistema.<br>
+    -> URL: http://localhost:8000/api/usuario <br>
     -> Verbo: post <br>
     -> Argumentos: 
         nome (body), 
@@ -35,7 +36,8 @@ PHP 7.4.10
         Mensagem de sucesso <br>
 
 2. Login: <br>
-     -> URL: /login <br>
+    -> Descrição: Recebe e-mail e senha do usuário, verifica se estão preenchidos, se estão cadastrados para o mesmo usuário no banco de dados e retorna os dados do usuário.<br>
+    -> URL: http://localhost:8000/api/login <br>
     -> Verbo: post <br>
     -> Argumentos: 
         email (body), 
@@ -44,7 +46,8 @@ PHP 7.4.10
         usuario (id, nome, cpf, telefone, email, senha (criptografada)) <br>
 
 3. Cadastro de reserva: <br>
-    -> URL: /reserva <br>
+    -> Descrição: Recebe o horário de início e o id de usuário, verifica se o horário é válido e se já está cadastrado para outro usuário e, se passar por todas as validações, calcula o horário de fim e salva uma reserva com os dados obtidos. Formato de início: yyyy-MM-dd hh:mm:ss (exemplo: 2020-12-20 21:12:00).<br>
+    -> URL: http://localhost:8000/api/reserva <br>
     -> Verbo: post <br>
     -> Argumentos: 
         inicio (body), 
@@ -53,7 +56,8 @@ PHP 7.4.10
         -> Mensagem de sucesso <br>
 
 4. Listagem de reservas por data: <br>
-    -> URL: /reserva/data={data} <br>
+    -> Descrição: Recebe uma data e lista os horários reservados na data. A data deve ser passada com um percente (%) no final (exemplo: 2020-12-20%).<br>
+    -> URL: http://localhost:8000/api/reserva/data={data} <br>
     -> Verbo: get <br>
     -> Argumentos: 
         data: (route) <br>
@@ -61,7 +65,8 @@ PHP 7.4.10
         Lista de reservas (inicio, fim, usuario) <br>
 
 5. Listagem de reservas por usuário: <br>
-    -> URL: reserva/usuario={usuario}&inicio={inicio} <br>
+    -> Descrição: Recebe um horário de início e um id de usuário e retorna a lista de horários reservados pelo usuário depois da data recebida. Formato dos horários: yyyy-MM-dd hh:mm:ss (exemplo: 2020-12-20 21:12:00). Formato de início: yyyy-MM-dd hh:mm:ss (exemplo: 2020-12-20 21:12:00).<br>
+    -> URL: http://localhost:8000/api/reserva/usuario={usuario}&inicio={inicio} <br>
     -> Verbo: get <br>
     -> Argumentos: 
         usuario (route), 
@@ -70,7 +75,8 @@ PHP 7.4.10
         Lista de reservas (inicio, fim) <br>
 
 6. Exclusão de reserva: <br>
-    -> URL: /reserva <br>
+    -> Descrição: Recebe um horário de início e exclui do banco de dados a reserva que contém o horário de início. <br>
+    -> URL: http://localhost:8000/api/reserva <br>
     -> Verbo: delete <br>
     -> Argumentos: 
         inicio (route) <br>

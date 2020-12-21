@@ -31,8 +31,9 @@ class ReservaController extends Controller
     }
 
     /**
-     * Recebe um horário de início e um id de usuário, calcula o horário de fim e salva uma reserva com os dados obtidos.
-     *
+     * Recebe o horário de início e o id de usuário, verifica se o horário é válido e se já está 
+     * cadastrado para outro usuário e, se passar por todas as validações, calcula o horário de fim e salva uma reserva com os 
+     * dados obtidos.
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
@@ -94,7 +95,7 @@ class ReservaController extends Controller
     }
 
     /**
-     * Exclui do banco de dados a reserva que contém o horário de início passado como parâmetro.
+     * Recebe um horário de início e exclui do banco de dados a reserva que contém o horário de início.
      *
      * @param  dateTime  $inicio
      * @return \Illuminate\Http\Response
