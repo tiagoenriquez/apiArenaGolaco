@@ -36,7 +36,7 @@ PHP 7.4.10
         Mensagem de sucesso <br>
 
 2. Login: <br>
-    -> Descrição: Recebe e-mail e senha do usuário, verifica se estão preenchidos, se estão cadastrados para o mesmo usuário no banco de dados e retorna os dados do usuário.<br>
+    -> Descrição: Recebe e-mail e senha do usuário, verifica se estão cadastrados para o mesmo usuário no banco de dados e retorna os dados do usuário.<br>
     -> URL: http://localhost:8000/api/login <br>
     -> Verbo: post <br>
     -> Argumentos: 

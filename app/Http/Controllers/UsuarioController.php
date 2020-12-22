@@ -114,10 +114,7 @@ class UsuarioController extends Controller
     public function logar(Request $request)
     {
         $usuarioRequest = $request->all();
-        $email = $usuarioRequest['email'];
         $senha = $usuarioRequest['senha'];
-
-        if(!$email || !$senha) return response("Credenciais inválidas", 400);
 
         $usuario = Usuario::where('email', $usuarioRequest['email'])->first();
         if(!$usuario) return response("Credenciais inválidas", 400);
