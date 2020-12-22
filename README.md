@@ -1,6 +1,6 @@
 ## <h1 align=center><b>API ARENA GOLAÇO</b></h1>
 
-Api para persistência de dados provenientes do aplicativo Arena Golaço, uma quadra fictícia criada para ser objeto do presente projeto.
+Api para persistência de dados provenientes do aplicativo Arena Golaço, uma quadra fictícia criada para ser objeto do presente projeto. Este projeto recebeu orientação do professor Luis França Neri Jr. (https://github.com/luisfrancajr) e foi publicado originalmente no repositório http://github.com/35-tiago.api-reserva-quadra.
 
 ## Como ter esta API rodando na sua máquina:
 
@@ -86,7 +86,7 @@ PHP 7.4.10
 ## Autores:
 
 Tiago Enriquez Tachy <br>
-Ian Vitor
+Ian Vitor <br>
 
 ## Framework:
 
