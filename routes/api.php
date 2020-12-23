@@ -20,7 +20,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('login', [UsuarioController::class, 'logar']);
+Route::post('usuario/login', [UsuarioController::class, 'logar']);
 Route::get('reserva/usuario={usuario}&inicio={inicio}', [ReservaController::class, 'listarPorUsuario']);
 Route::get('reserva/data={data}', [ReservaController::class, 'listarPorData']);
 Route::resource('usuario', UsuarioController::class);
